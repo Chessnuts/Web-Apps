@@ -2,7 +2,7 @@
     <?php
         include ("mathfunctions.php");
     ?>
-    <h1>Creating Web Applications - Lab 7<h1>
+    <h1>Creating Web Applications - Lab 7</h1>
     <?php
         if(isset($_GET["number"])){
             $num = $_GET["number"];
