@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="JS Enhancements" />
+        <meta name="keywords" content="html, css, enhancements, javascript" />
+        <meta name="author" content="Ryan Chessum"  />
+
+        <title>Assignment 2</title>
+    
+        <link href="styles/style.css" rel="stylesheet" />
+        <script src="scripts/apply.js"></script>
+        <script src="scripts/enhancements.js"></script>
+    
+    </head>
+    <body>
+        <?php
+            include("header.inc");
+        ?>
+
+        <h2 id="jsenhancementspage">Enhancements</h2>
+        
+        <section class="vertical_section">
+            <h2>Enhancement 1 - Enhanced Menu Display</h2>
+            <p>  
+                On all pages the nav menu is altered by javascript. 
+                The current page selected will appear highlighted on the nav menu to display to the user which page they are on.
+                This is done by checking which page is the current page and adding a class to the corrosponding nav hyperlink element. 
+                In the css stylesheet, classes with this element have a different style which sets the Background to white.
+                As well as this, the nav menu will stick to the top of the screen. This is also done by adding a class to the nav element.
+                The class is added through the window.onscroll event. If the window has scrolled past the top of the navbar, the sticky class is added and the navbar is fixed to the top of the screen.
+                If the user scrolls back it goes back to normal. <br>
+                <a href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp" >W3 Schools</a> referenced for sticky nav idea.
+            </p>
+        </section>
+
+        <section class="vertical_section">
+            <h2>Enhancement 2 - Loading Jobs from javascript</h2>
+            <p> 
+                On the <a href="jobs.html">jobs</a> page, the job listing sections are no longer in the html files.
+                The details of each job is stored in JSON format in the enhancements.js file.
+                On the jobs page, the javascript generates a html section for each job listed in the file.
+                The script adds the content for each data entry such as the title, description, skills, etc. into the appropriate part of the listing.
+                The inner HTML of the span element on the jobs page is updated to have each listing so that each job is displayed.
+                This allows for new job listings to be added easily without having to update the jobs.html file every time.
+            </p>
+        </section>
+        
+        <?php
+            include("footer.inc");
+        ?>
+    </body>
+</html>

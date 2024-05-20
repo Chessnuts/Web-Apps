@@ -1,0 +1,294 @@
+/*
+Author: Ryan Chessum 102564760
+Filename: style.css
+Description: Assignment 1 Stylesheet
+
+*/
+
+/* Page Heading */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+	display:inline-block;
+    padding: 1%;
+    font-size: 68px;
+}
+
+header {
+	background: red;
+	padding: 2%;
+}
+
+#banner {
+	height: 10%;
+	width: 10%;
+	float: right;
+}
+
+/* Navbar */
+nav {
+	text-align: center;
+	border: 4px solid white;
+	overflow: hidden;
+	background: red;
+	color: white;
+	clear:both;
+}
+
+nav a {
+	float: left;
+	border: 4px solid white;
+	color: white;
+	padding: 16px 18px; 
+	margin: -4px;
+	background: red;
+	font-size: 18px;
+	font-family: arial;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: white;
+	color: black;
+	background: white;
+	font-weight: bold;
+}
+
+/* page content */
+
+body{
+	background-image: url(Images/Background.jpeg);
+}
+
+/* sub headings*/
+
+h2 {
+    text-decoration: underline;
+}
+
+h2, h3{
+    color: darkred;
+    font-weight: bold;
+
+}
+
+/*word content*/
+
+p, h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 10%;
+}
+
+ol, ul {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Aside */
+aside {
+	float: right;
+	border: 5px solid red;
+	width: 25%;
+	padding: 1em;
+	margin: 1em;
+}
+
+section {
+    display:inline-block;
+    vertical-align: top;
+    /*float: left;*/
+    border: 5px solid red;
+    padding: 1em;
+	margin: 1em;
+}
+
+/* logo */
+#rc {
+	float: right;
+	padding-right: 10%;
+	width: 20%;
+}
+
+/* Apply page */
+legend{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+/*For Dynamic form display */
+/* If certain skills are selected, sections of the form will be revealed to display more skills */
+input:not(:checked) + .hidden {
+	display: none;
+}
+
+.expand{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 10%;
+}
+
+ textarea {
+	display: list-item;
+}
+
+.vertical_section {
+	width: 20%;
+}
+
+/* About page */
+dl dt {
+	float: left;
+	width: 20%;
+	text-align: right;
+}
+
+dl dd {
+	float: right;
+	width: 20%;
+	margin-right: 55%;
+}
+
+figure {
+	float: right;
+}
+
+#timetable{
+	text-align: center;
+	clear: both;
+	padding-right: 5%;
+	text-decoration: underline;
+}
+
+table{
+	width:90%;
+}
+
+table, th, td {
+	border: 2px solid black;
+	text-align: center;
+	clear: both;
+	margin-left:auto;
+	margin-Right: auto;
+	background: #ff0000;
+	color: #ffffff;
+}
+
+#me{
+	border: 2px solid red;
+	width: 30%;
+	height: 30%;
+	float: right;
+}
+
+#error_message p{
+	color:#ff0000;
+	border: 5px solid #ff0000;
+	width: 50%;
+	padding-left: 2%;
+}
+
+/* Footer */
+
+footer {
+	color: white;
+	background: red;
+	padding: 2%;
+	width: 96%;
+	float:inline-start;
+	
+}
+
+footer p {
+	padding-left: 2%;
+}
+
+/* Add styles for the sticky navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add a class to indicate the current page in the navbar */
+.currentpage {
+    background-color: white;
+	color: black;
+	background: white;
+}
+
+
+
+/* Responsive layout*/
+@media screen and (max-width: 60em) {
+
+
+	#banner {
+		display: none;
+	}
+	
+	nav a{
+		font-size: 14px;
+		padding: 12px 14px; 
+	}
+
+	/*display section content on smaller screen more clearly */
+	.vertical_section {
+		width: 50%;
+	}
+	aside {
+		width: 20%;
+	}
+
+	dl dt {
+		float: left;
+		width: 25%;
+		text-align: right;
+	}
+	
+	dl dd {
+		float: right;
+		width: 25%;
+		margin-right: 40%;
+	}
+
+}
+
+/* small display */
+@media screen and (max-width: 34em) {
+
+	header h1 {
+		text-align: center;
+	}
+
+	nav a{
+		font-size: 12px;
+		padding: 10px 12px; 
+	}
+	
+	/*make aside appear like section on smaller screen */
+	aside {
+		width: 80%;
+		float:left
+	}
+	
+
+	/*display section content on smaller screen more clearly */
+	.vertical_section {
+		width: 80%;
+	}
+
+	dl dt {
+		float: left;
+		width: 20%;
+		text-align: right;
+	}
+	
+	dl dd {
+		float: right;
+		width: 20%;
+		margin-right: 40%;
+	}
+
+}
+
