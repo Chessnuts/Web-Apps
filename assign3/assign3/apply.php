@@ -21,7 +21,7 @@
         <h2 id="applypage">Job Application form</h2>
         <p>Please apply for a job using the form below</p>
 
-        <form id="apply_form" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php" novalidate="novalidate">
+        <form id="apply_form" method="post" action="processEOI.php" novalidate="novalidate">
 	
             <fieldset>
                 <legend>Job Reference</legend>
@@ -181,7 +181,7 @@
             <input type="reset" value="reset application" />
         </form>
         <p><br></p>
-        
+
         <?php
             include("footer.inc");
         ?>
