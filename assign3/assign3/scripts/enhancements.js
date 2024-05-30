@@ -65,7 +65,7 @@ function createJobSection(jobData) {
 
     //generate html content for job section based on job data JSON
     var html = `<h3>${jobData.title}</h3>
-                <p>Reference Number: <a href="apply.html" class="refNum">${jobData.referenceNumber}</a></p>
+                <p>Reference Number: <a href="apply.php" class="refNum">${jobData.referenceNumber}</a></p>
                 <p>${jobData.description}</p>
                 <p>Salary Range: ${jobData.salaryRange}</p>
                 <p>For this position you will report to the ${jobData.reportingTo}.</p> 

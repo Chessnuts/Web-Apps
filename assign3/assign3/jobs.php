@@ -16,7 +16,7 @@
     </head>
     <body>
         <?php
-            include("header.inc");
+                include("header.inc");
         ?>
 
         <h2 id="jobpage">Jobs</h2>

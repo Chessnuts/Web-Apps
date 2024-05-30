@@ -9,7 +9,7 @@
         <title>Assignment 2</title>
     
         <link href="styles/style.css" rel="stylesheet" />
-        <script src="scripts/apply.js"></script>
+        <!--<script src="scripts/apply.js"></script> -->
         <script src="scripts/enhancements.js"></script>
     
     </head>
